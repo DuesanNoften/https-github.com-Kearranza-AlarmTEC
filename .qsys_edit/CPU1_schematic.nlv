@@ -1,0 +1,43 @@
+# # File gsaved with Nlview version 6.3.8  2013-12-19 bk=1.2992 VDI=34 GEI=35
+# 
+preplace inst CPU1.seven_seg_0 -pg 1 -lvl 4 -y 870
+preplace inst CPU1 -pg 1 -lvl 1 -y 40 -regy -20
+preplace inst CPU1.seven_seg_1 -pg 1 -lvl 4 -y 1070
+preplace inst CPU1.seven_seg_2 -pg 1 -lvl 4 -y 1170
+preplace inst CPU1.leds -pg 1 -lvl 4 -y 770
+preplace inst CPU1.seven_seg_3 -pg 1 -lvl 4 -y 1470
+preplace inst CPU1.seven_seg_4 -pg 1 -lvl 4 -y 1270
+preplace inst CPU1.seven_seg_5 -pg 1 -lvl 4 -y 1370
+preplace inst CPU1.jtag_uart_0 -pg 1 -lvl 4 -y 450
+preplace inst CPU1.buzzer -pg 1 -lvl 4 -y 150
+preplace inst CPU1.CPU1 -pg 1 -lvl 3 -y 400
+preplace inst CPU1.sw_rst -pg 1 -lvl 4 -y 970
+preplace inst CPU1.clk_0 -pg 1 -lvl 1 -y 370
+preplace inst CPU1.ram_0 -pg 1 -lvl 4 -y 250
+preplace inst CPU1.key_1 -pg 1 -lvl 4 -y 30
+preplace inst CPU1.timer_0 -pg 1 -lvl 4 -y 550
+preplace inst CPU1.key_2 -pg 1 -lvl 4 -y 330
+preplace inst CPU1.CPU1.cpu -pg 1
+preplace inst CPU1.key_3 -pg 1 -lvl 4 -y 650
+preplace inst CPU1.CPU1.reset_bridge -pg 1
+preplace inst CPU1.CPU1.clock_bridge -pg 1
+preplace netloc EXPORT<net_container>CPU1</net_container>(SLAVE)CPU1.seven_seg_5,(SLAVE)seven_seg_5.external_connection) 1 0 4 NJ 1400 NJ 1400 NJ 1400 NJ
+preplace netloc EXPORT<net_container>CPU1</net_container>(SLAVE)CPU1.seven_seg_2,(SLAVE)seven_seg_2.external_connection) 1 0 4 NJ 1200 NJ 1200 NJ 1200 NJ
+preplace netloc INTERCONNECT<net_container>CPU1</net_container>(SLAVE)leds.s1,(MASTER)CPU1.data_master,(SLAVE)ram_0.s1,(SLAVE)CPU1.debug_mem_slave,(SLAVE)seven_seg_0.s1,(SLAVE)seven_seg_4.s1,(SLAVE)jtag_uart_0.avalon_jtag_slave,(SLAVE)key_2.s1,(SLAVE)buzzer.s1,(SLAVE)key_1.s1,(SLAVE)timer_0.s1,(SLAVE)sw_rst.s1,(SLAVE)seven_seg_2.s1,(SLAVE)seven_seg_3.s1,(SLAVE)seven_seg_5.s1,(MASTER)CPU1.instruction_master,(SLAVE)key_3.s1,(SLAVE)seven_seg_1.s1) 1 2 2 510 540 1080
+preplace netloc EXPORT<net_container>CPU1</net_container>(SLAVE)seven_seg_0.external_connection,(SLAVE)CPU1.seven_seg_0) 1 0 4 NJ 900 NJ 900 NJ 900 NJ
+preplace netloc EXPORT<net_container>CPU1</net_container>(SLAVE)CPU1.reset,(SLAVE)clk_0.clk_in_reset) 1 0 1 NJ
+preplace netloc FAN_OUT<net_container>CPU1</net_container>(SLAVE)key_3.irq,(SLAVE)jtag_uart_0.irq,(SLAVE)timer_0.irq,(SLAVE)key_1.irq,(SLAVE)key_2.irq,(MASTER)CPU1.irq) 1 3 1 1100
+preplace netloc EXPORT<net_container>CPU1</net_container>(SLAVE)CPU1.seven_seg_3,(SLAVE)seven_seg_3.external_connection) 1 0 4 NJ 1500 NJ 1500 NJ 1500 NJ
+preplace netloc EXPORT<net_container>CPU1</net_container>(SLAVE)CPU1.leds,(SLAVE)leds.external_connection) 1 0 4 NJ 800 NJ 800 NJ 800 NJ
+preplace netloc EXPORT<net_container>CPU1</net_container>(SLAVE)key_1.external_connection,(SLAVE)CPU1.key_1) 1 0 4 NJ 60 NJ 60 NJ 60 NJ
+preplace netloc EXPORT<net_container>CPU1</net_container>(SLAVE)CPU1.seven_seg_4,(SLAVE)seven_seg_4.external_connection) 1 0 4 NJ 1300 NJ 1300 NJ 1300 NJ
+preplace netloc EXPORT<net_container>CPU1</net_container>(SLAVE)CPU1.key_3,(SLAVE)key_3.external_connection) 1 0 4 NJ 680 NJ 680 NJ 680 NJ
+preplace netloc EXPORT<net_container>CPU1</net_container>(SLAVE)clk_0.clk_in,(SLAVE)CPU1.clk) 1 0 1 NJ
+preplace netloc INTERCONNECT<net_container>CPU1</net_container>(SLAVE)leds.reset,(SLAVE)sw_rst.reset,(SLAVE)seven_seg_2.reset,(SLAVE)key_2.reset,(MASTER)CPU1.debug_reset_request,(SLAVE)timer_0.reset,(MASTER)clk_0.clk_reset,(SLAVE)seven_seg_0.reset,(SLAVE)jtag_uart_0.reset,(SLAVE)seven_seg_4.reset,(SLAVE)seven_seg_5.reset,(SLAVE)CPU1.reset,(SLAVE)seven_seg_1.reset,(SLAVE)ram_0.reset1,(SLAVE)key_3.reset,(SLAVE)seven_seg_3.reset,(SLAVE)key_1.reset,(SLAVE)buzzer.reset) 1 1 3 NJ 400 490 360 1040
+preplace netloc EXPORT<net_container>CPU1</net_container>(SLAVE)sw_rst.external_connection,(SLAVE)CPU1.sw_rst) 1 0 4 NJ 1000 NJ 1000 NJ 1000 NJ
+preplace netloc EXPORT<net_container>CPU1</net_container>(SLAVE)CPU1.seven_seg_1,(SLAVE)seven_seg_1.external_connection) 1 0 4 NJ 1100 NJ 1100 NJ 1100 NJ
+preplace netloc EXPORT<net_container>CPU1</net_container>(SLAVE)buzzer.external_connection,(SLAVE)CPU1.buzzer) 1 0 4 NJ 180 NJ 180 NJ 180 NJ
+preplace netloc FAN_OUT<net_container>CPU1</net_container>(MASTER)clk_0.clk,(SLAVE)seven_seg_1.clk,(SLAVE)seven_seg_4.clk,(SLAVE)key_3.clk,(SLAVE)seven_seg_3.clk,(SLAVE)jtag_uart_0.clk,(SLAVE)CPU1.clk,(SLAVE)seven_seg_5.clk,(SLAVE)seven_seg_2.clk,(SLAVE)leds.clk,(SLAVE)ram_0.clk1,(SLAVE)timer_0.clk,(SLAVE)buzzer.clk,(SLAVE)sw_rst.clk,(SLAVE)key_1.clk,(SLAVE)seven_seg_0.clk,(SLAVE)key_2.clk) 1 1 3 NJ 380 470 320 1120
+preplace netloc EXPORT<net_container>CPU1</net_container>(SLAVE)key_2.external_connection,(SLAVE)CPU1.key_2) 1 0 4 NJ 340 NJ 340 NJ 340 NJ
+levelinfo -pg 1 0 80 1310
+levelinfo -hier CPU1 90 120 450 800 1150 1300

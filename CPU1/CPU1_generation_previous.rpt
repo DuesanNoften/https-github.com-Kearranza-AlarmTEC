@@ -1,0 +1,347 @@
+Info: Starting: Create simulation model
+Info: qsys-generate /home/duesan/Documents/CPU3/CPU1.qsys --simulation=VERILOG --allow-mixed-language-simulation --output-directory=/home/duesan/Documents/CPU3/CPU1/simulation --family="Cyclone V" --part=5CSXFC6D6F31C6
+Progress: Loading CPU3/CPU1.qsys
+Progress: Reading input file
+Progress: Adding CPU1 [altera_nios2_gen2 18.1]
+Progress: Parameterizing module CPU1
+Progress: Adding buzzer [altera_avalon_pio 18.1]
+Progress: Parameterizing module buzzer
+Progress: Adding clk_0 [clock_source 18.1]
+Progress: Parameterizing module clk_0
+Progress: Adding jtag_uart_0 [altera_avalon_jtag_uart 18.1]
+Progress: Parameterizing module jtag_uart_0
+Progress: Adding key_1 [altera_avalon_pio 18.1]
+Progress: Parameterizing module key_1
+Progress: Adding key_2 [altera_avalon_pio 18.1]
+Progress: Parameterizing module key_2
+Progress: Adding key_3 [altera_avalon_pio 18.1]
+Progress: Parameterizing module key_3
+Progress: Adding leds [altera_avalon_pio 18.1]
+Progress: Parameterizing module leds
+Progress: Adding ram_0 [altera_avalon_onchip_memory2 18.1]
+Progress: Parameterizing module ram_0
+Progress: Adding seven_seg_0 [altera_avalon_pio 18.1]
+Progress: Parameterizing module seven_seg_0
+Progress: Adding seven_seg_1 [altera_avalon_pio 18.1]
+Progress: Parameterizing module seven_seg_1
+Progress: Adding seven_seg_2 [altera_avalon_pio 18.1]
+Progress: Parameterizing module seven_seg_2
+Progress: Adding seven_seg_3 [altera_avalon_pio 18.1]
+Progress: Parameterizing module seven_seg_3
+Progress: Adding seven_seg_4 [altera_avalon_pio 18.1]
+Progress: Parameterizing module seven_seg_4
+Progress: Adding seven_seg_5 [altera_avalon_pio 18.1]
+Progress: Parameterizing module seven_seg_5
+Progress: Adding sw_rst [altera_avalon_pio 18.1]
+Progress: Parameterizing module sw_rst
+Progress: Adding timer_0 [altera_avalon_timer 18.1]
+Progress: Parameterizing module timer_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: CPU1.jtag_uart_0: JTAG UART IP input clock need to be at least double (2x) the operating frequency of JTAG TCK on board
+Info: CPU1.key_1: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: CPU1.key_2: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: CPU1.key_3: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: CPU1.sw_rst: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: CPU1: Generating CPU1 "CPU1" for SIM_VERILOG
+Info: CPU1: "CPU1" instantiated altera_nios2_gen2 "CPU1"
+Info: buzzer: Starting RTL generation for module 'CPU1_buzzer'
+Info: buzzer:   Generation command is [exec /home/duesan/intelFPGA_lite/18.1/quartus/linux64/perl/bin/perl -I /home/duesan/intelFPGA_lite/18.1/quartus/linux64/perl/lib -I /home/duesan/intelFPGA_lite/18.1/quartus/sopc_builder/bin/europa -I /home/duesan/intelFPGA_lite/18.1/quartus/sopc_builder/bin/perl_lib -I /home/duesan/intelFPGA_lite/18.1/quartus/sopc_builder/bin -I /home/duesan/intelFPGA_lite/18.1/quartus/../ip/altera/sopc_builder_ip/common -I /home/duesan/intelFPGA_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- /home/duesan/intelFPGA_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=CPU1_buzzer --dir=/tmp/alt9954_8707478999221561869.dir/0074_buzzer_gen/ --quartus_dir=/home/duesan/intelFPGA_lite/18.1/quartus --verilog --config=/tmp/alt9954_8707478999221561869.dir/0074_buzzer_gen//CPU1_buzzer_component_configuration.pl  --do_build_sim=1    --sim_dir=/tmp/alt9954_8707478999221561869.dir/0074_buzzer_gen/  ]
+Info: buzzer: Done RTL generation for module 'CPU1_buzzer'
+Info: buzzer: "CPU1" instantiated altera_avalon_pio "buzzer"
+Info: jtag_uart_0: Starting RTL generation for module 'CPU1_jtag_uart_0'
+Info: jtag_uart_0:   Generation command is [exec /home/duesan/intelFPGA_lite/18.1/quartus/linux64/perl/bin/perl -I /home/duesan/intelFPGA_lite/18.1/quartus/linux64/perl/lib -I /home/duesan/intelFPGA_lite/18.1/quartus/sopc_builder/bin/europa -I /home/duesan/intelFPGA_lite/18.1/quartus/sopc_builder/bin/perl_lib -I /home/duesan/intelFPGA_lite/18.1/quartus/sopc_builder/bin -I /home/duesan/intelFPGA_lite/18.1/quartus/../ip/altera/sopc_builder_ip/common -I /home/duesan/intelFPGA_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart -- /home/duesan/intelFPGA_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart/generate_rtl.pl --name=CPU1_jtag_uart_0 --dir=/tmp/alt9954_8707478999221561869.dir/0075_jtag_uart_0_gen/ --quartus_dir=/home/duesan/intelFPGA_lite/18.1/quartus --verilog --config=/tmp/alt9954_8707478999221561869.dir/0075_jtag_uart_0_gen//CPU1_jtag_uart_0_component_configuration.pl  --do_build_sim=1    --sim_dir=/tmp/alt9954_8707478999221561869.dir/0075_jtag_uart_0_gen/  ]
+Info: jtag_uart_0: Done RTL generation for module 'CPU1_jtag_uart_0'
+Info: jtag_uart_0: "CPU1" instantiated altera_avalon_jtag_uart "jtag_uart_0"
+Info: key_1: Starting RTL generation for module 'CPU1_key_1'
+Info: key_1:   Generation command is [exec /home/duesan/intelFPGA_lite/18.1/quartus/linux64/perl/bin/perl -I /home/duesan/intelFPGA_lite/18.1/quartus/linux64/perl/lib -I /home/duesan/intelFPGA_lite/18.1/quartus/sopc_builder/bin/europa -I /home/duesan/intelFPGA_lite/18.1/quartus/sopc_builder/bin/perl_lib -I /home/duesan/intelFPGA_lite/18.1/quartus/sopc_builder/bin -I /home/duesan/intelFPGA_lite/18.1/quartus/../ip/altera/sopc_builder_ip/common -I /home/duesan/intelFPGA_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- /home/duesan/intelFPGA_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=CPU1_key_1 --dir=/tmp/alt9954_8707478999221561869.dir/0076_key_1_gen/ --quartus_dir=/home/duesan/intelFPGA_lite/18.1/quartus --verilog --config=/tmp/alt9954_8707478999221561869.dir/0076_key_1_gen//CPU1_key_1_component_configuration.pl  --do_build_sim=1    --sim_dir=/tmp/alt9954_8707478999221561869.dir/0076_key_1_gen/  ]
+Info: key_1: Done RTL generation for module 'CPU1_key_1'
+Info: key_1: "CPU1" instantiated altera_avalon_pio "key_1"
+Info: leds: Starting RTL generation for module 'CPU1_leds'
+Info: leds:   Generation command is [exec /home/duesan/intelFPGA_lite/18.1/quartus/linux64/perl/bin/perl -I /home/duesan/intelFPGA_lite/18.1/quartus/linux64/perl/lib -I /home/duesan/intelFPGA_lite/18.1/quartus/sopc_builder/bin/europa -I /home/duesan/intelFPGA_lite/18.1/quartus/sopc_builder/bin/perl_lib -I /home/duesan/intelFPGA_lite/18.1/quartus/sopc_builder/bin -I /home/duesan/intelFPGA_lite/18.1/quartus/../ip/altera/sopc_builder_ip/common -I /home/duesan/intelFPGA_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- /home/duesan/intelFPGA_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=CPU1_leds --dir=/tmp/alt9954_8707478999221561869.dir/0077_leds_gen/ --quartus_dir=/home/duesan/intelFPGA_lite/18.1/quartus --verilog --config=/tmp/alt9954_8707478999221561869.dir/0077_leds_gen//CPU1_leds_component_configuration.pl  --do_build_sim=1    --sim_dir=/tmp/alt9954_8707478999221561869.dir/0077_leds_gen/  ]
+Info: leds: Done RTL generation for module 'CPU1_leds'
+Info: leds: "CPU1" instantiated altera_avalon_pio "leds"
+Info: ram_0: Starting RTL generation for module 'CPU1_ram_0'
+Info: ram_0:   Generation command is [exec /home/duesan/intelFPGA_lite/18.1/quartus/linux64/perl/bin/perl -I /home/duesan/intelFPGA_lite/18.1/quartus/linux64/perl/lib -I /home/duesan/intelFPGA_lite/18.1/quartus/sopc_builder/bin/europa -I /home/duesan/intelFPGA_lite/18.1/quartus/sopc_builder/bin/perl_lib -I /home/duesan/intelFPGA_lite/18.1/quartus/sopc_builder/bin -I /home/duesan/intelFPGA_lite/18.1/quartus/../ip/altera/sopc_builder_ip/common -I /home/duesan/intelFPGA_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- /home/duesan/intelFPGA_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=CPU1_ram_0 --dir=/tmp/alt9954_8707478999221561869.dir/0078_ram_0_gen/ --quartus_dir=/home/duesan/intelFPGA_lite/18.1/quartus --verilog --config=/tmp/alt9954_8707478999221561869.dir/0078_ram_0_gen//CPU1_ram_0_component_configuration.pl  --do_build_sim=1    --sim_dir=/tmp/alt9954_8707478999221561869.dir/0078_ram_0_gen/  ]
+Info: ram_0: Done RTL generation for module 'CPU1_ram_0'
+Info: ram_0: "CPU1" instantiated altera_avalon_onchip_memory2 "ram_0"
+Info: seven_seg_0: Starting RTL generation for module 'CPU1_seven_seg_0'
+Info: seven_seg_0:   Generation command is [exec /home/duesan/intelFPGA_lite/18.1/quartus/linux64/perl/bin/perl -I /home/duesan/intelFPGA_lite/18.1/quartus/linux64/perl/lib -I /home/duesan/intelFPGA_lite/18.1/quartus/sopc_builder/bin/europa -I /home/duesan/intelFPGA_lite/18.1/quartus/sopc_builder/bin/perl_lib -I /home/duesan/intelFPGA_lite/18.1/quartus/sopc_builder/bin -I /home/duesan/intelFPGA_lite/18.1/quartus/../ip/altera/sopc_builder_ip/common -I /home/duesan/intelFPGA_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- /home/duesan/intelFPGA_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=CPU1_seven_seg_0 --dir=/tmp/alt9954_8707478999221561869.dir/0079_seven_seg_0_gen/ --quartus_dir=/home/duesan/intelFPGA_lite/18.1/quartus --verilog --config=/tmp/alt9954_8707478999221561869.dir/0079_seven_seg_0_gen//CPU1_seven_seg_0_component_configuration.pl  --do_build_sim=1    --sim_dir=/tmp/alt9954_8707478999221561869.dir/0079_seven_seg_0_gen/  ]
+Info: seven_seg_0: Done RTL generation for module 'CPU1_seven_seg_0'
+Info: seven_seg_0: "CPU1" instantiated altera_avalon_pio "seven_seg_0"
+Info: sw_rst: Starting RTL generation for module 'CPU1_sw_rst'
+Info: sw_rst:   Generation command is [exec /home/duesan/intelFPGA_lite/18.1/quartus/linux64/perl/bin/perl -I /home/duesan/intelFPGA_lite/18.1/quartus/linux64/perl/lib -I /home/duesan/intelFPGA_lite/18.1/quartus/sopc_builder/bin/europa -I /home/duesan/intelFPGA_lite/18.1/quartus/sopc_builder/bin/perl_lib -I /home/duesan/intelFPGA_lite/18.1/quartus/sopc_builder/bin -I /home/duesan/intelFPGA_lite/18.1/quartus/../ip/altera/sopc_builder_ip/common -I /home/duesan/intelFPGA_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- /home/duesan/intelFPGA_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=CPU1_sw_rst --dir=/tmp/alt9954_8707478999221561869.dir/0080_sw_rst_gen/ --quartus_dir=/home/duesan/intelFPGA_lite/18.1/quartus --verilog --config=/tmp/alt9954_8707478999221561869.dir/0080_sw_rst_gen//CPU1_sw_rst_component_configuration.pl  --do_build_sim=1    --sim_dir=/tmp/alt9954_8707478999221561869.dir/0080_sw_rst_gen/  ]
+Info: sw_rst: Done RTL generation for module 'CPU1_sw_rst'
+Info: sw_rst: "CPU1" instantiated altera_avalon_pio "sw_rst"
+Info: timer_0: Starting RTL generation for module 'CPU1_timer_0'
+Info: timer_0:   Generation command is [exec /home/duesan/intelFPGA_lite/18.1/quartus/linux64//perl/bin/perl -I /home/duesan/intelFPGA_lite/18.1/quartus/linux64//perl/lib -I /home/duesan/intelFPGA_lite/18.1/quartus/sopc_builder/bin/europa -I /home/duesan/intelFPGA_lite/18.1/quartus/sopc_builder/bin/perl_lib -I /home/duesan/intelFPGA_lite/18.1/quartus/sopc_builder/bin -I /home/duesan/intelFPGA_lite/18.1/quartus/../ip/altera/sopc_builder_ip/common -I /home/duesan/intelFPGA_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_timer -- /home/duesan/intelFPGA_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_timer/generate_rtl.pl --name=CPU1_timer_0 --dir=/tmp/alt9954_8707478999221561869.dir/0081_timer_0_gen/ --quartus_dir=/home/duesan/intelFPGA_lite/18.1/quartus --verilog --config=/tmp/alt9954_8707478999221561869.dir/0081_timer_0_gen//CPU1_timer_0_component_configuration.pl  --do_build_sim=1    --sim_dir=/tmp/alt9954_8707478999221561869.dir/0081_timer_0_gen/  ]
+Info: timer_0: Done RTL generation for module 'CPU1_timer_0'
+Info: timer_0: "CPU1" instantiated altera_avalon_timer "timer_0"
+Info: avalon_st_adapter: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_001: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_002: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_003: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_004: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_005: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_006: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_007: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_008: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_009: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_010: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_011: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_012: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_013: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_014: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_015: Inserting error_adapter: error_adapter_0
+Info: mm_interconnect_0: "CPU1" instantiated altera_mm_interconnect "mm_interconnect_0"
+Info: irq_mapper: "CPU1" instantiated altera_irq_mapper "irq_mapper"
+Info: rst_controller: "CPU1" instantiated altera_reset_controller "rst_controller"
+Info: cpu: Starting RTL generation for module 'CPU1_CPU1_cpu'
+Info: cpu:   Generation command is [exec /home/duesan/intelFPGA_lite/18.1/quartus/linux64//eperlcmd -I /home/duesan/intelFPGA_lite/18.1/quartus/linux64//perl/lib -I /home/duesan/intelFPGA_lite/18.1/quartus/sopc_builder/bin/europa -I /home/duesan/intelFPGA_lite/18.1/quartus/sopc_builder/bin/perl_lib -I /home/duesan/intelFPGA_lite/18.1/quartus/sopc_builder/bin -I /home/duesan/intelFPGA_lite/18.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/cpu_lib -I /home/duesan/intelFPGA_lite/18.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/nios_lib -I /home/duesan/intelFPGA_lite/18.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -I /home/duesan/intelFPGA_lite/18.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -- /home/duesan/intelFPGA_lite/18.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/generate_rtl.epl --name=CPU1_CPU1_cpu --dir=/tmp/alt9954_8707478999221561869.dir/0084_cpu_gen/ --quartus_bindir=/home/duesan/intelFPGA_lite/18.1/quartus/linux64/ --verilog --config=/tmp/alt9954_8707478999221561869.dir/0084_cpu_gen//CPU1_CPU1_cpu_processor_configuration.pl  --do_build_sim=1    --sim_dir=/tmp/alt9954_8707478999221561869.dir/0084_cpu_gen/  ]
+Info: cpu: # 2024.08.19 12:58:57 (*) Starting Nios II generation
+Info: cpu: # 2024.08.19 12:58:57 (*)   Checking for plaintext license.
+Info: cpu: # 2024.08.19 13:00:32 (*)   Plaintext license not found.
+Info: cpu: # 2024.08.19 13:00:32 (*)   No license required to generate encrypted Nios II/e.
+Info: cpu: # 2024.08.19 13:00:32 (*)   Elaborating CPU configuration settings
+Info: cpu: # 2024.08.19 13:00:32 (*)   Creating all objects for CPU
+Info: cpu: # 2024.08.19 13:00:33 (*)   Creating '/tmp/alt9954_8707478999221561869.dir/0084_cpu_gen//CPU1_CPU1_cpu_nios2_waves.do'
+Info: cpu: # 2024.08.19 13:00:33 (*)   Generating RTL from CPU objects
+Info: cpu: # 2024.08.19 13:00:33 (*)   Creating plain-text RTL
+Info: cpu: # 2024.08.19 13:00:33 (*) Done Nios II generation
+Info: cpu: Done RTL generation for module 'CPU1_CPU1_cpu'
+Info: cpu: "CPU1" instantiated altera_nios2_gen2_unit "cpu"
+Info: CPU1_data_master_translator: "mm_interconnect_0" instantiated altera_merlin_master_translator "CPU1_data_master_translator"
+Info: jtag_uart_0_avalon_jtag_slave_translator: "mm_interconnect_0" instantiated altera_merlin_slave_translator "jtag_uart_0_avalon_jtag_slave_translator"
+Info: CPU1_data_master_agent: "mm_interconnect_0" instantiated altera_merlin_master_agent "CPU1_data_master_agent"
+Info: jtag_uart_0_avalon_jtag_slave_agent: "mm_interconnect_0" instantiated altera_merlin_slave_agent "jtag_uart_0_avalon_jtag_slave_agent"
+Info: jtag_uart_0_avalon_jtag_slave_agent_rsp_fifo: "mm_interconnect_0" instantiated altera_avalon_sc_fifo "jtag_uart_0_avalon_jtag_slave_agent_rsp_fifo"
+Info: router: "mm_interconnect_0" instantiated altera_merlin_router "router"
+Info: router_001: "mm_interconnect_0" instantiated altera_merlin_router "router_001"
+Info: router_002: "mm_interconnect_0" instantiated altera_merlin_router "router_002"
+Info: router_004: "mm_interconnect_0" instantiated altera_merlin_router "router_004"
+Info: cmd_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux"
+Info: cmd_demux_001: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux_001"
+Info: cmd_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux"
+Info: cmd_mux_002: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux_002"
+Info: Reusing file /home/duesan/Documents/CPU3/CPU1/simulation/submodules/altera_merlin_arbitrator.sv
+Info: rsp_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_demux"
+Info: rsp_demux_002: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_demux_002"
+Info: rsp_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux"
+Info: Reusing file /home/duesan/Documents/CPU3/CPU1/simulation/submodules/altera_merlin_arbitrator.sv
+Info: rsp_mux_001: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux_001"
+Info: Reusing file /home/duesan/Documents/CPU3/CPU1/simulation/submodules/altera_merlin_arbitrator.sv
+Info: avalon_st_adapter: "mm_interconnect_0" instantiated altera_avalon_st_adapter "avalon_st_adapter"
+Info: error_adapter_0: "avalon_st_adapter" instantiated error_adapter "error_adapter_0"
+Info: CPU1: Done "CPU1" with 33 modules, 53 files
+Info: qsys-generate succeeded.
+Info: Finished: Create simulation model
+Info: Starting: Create Modelsim Project.
+Info: sim-script-gen --spd=/home/duesan/Documents/CPU3/CPU1/CPU1.spd --output-directory=/home/duesan/Documents/CPU3/CPU1/simulation/ --use-relative-paths=true
+Info: Doing: ip-make-simscript --spd=/home/duesan/Documents/CPU3/CPU1/CPU1.spd --output-directory=/home/duesan/Documents/CPU3/CPU1/simulation/ --use-relative-paths=true
+Info: Generating the following file(s) for MODELSIM simulator in /home/duesan/Documents/CPU3/CPU1/simulation/ directory:
+Info: 	mentor/msim_setup.tcl
+Info: Generating the following file(s) for VCS simulator in /home/duesan/Documents/CPU3/CPU1/simulation/ directory:
+Info: 	synopsys/vcs/vcs_setup.sh
+Info: Generating the following file(s) for VCSMX simulator in /home/duesan/Documents/CPU3/CPU1/simulation/ directory:
+Info: 	synopsys/vcsmx/synopsys_sim.setup
+Info: 	synopsys/vcsmx/vcsmx_setup.sh
+Info: Generating the following file(s) for NCSIM simulator in /home/duesan/Documents/CPU3/CPU1/simulation/ directory:
+Info: 	cadence/cds.lib
+Info: 	cadence/hdl.var
+Info: 	cadence/ncsim_setup.sh
+Info: 	32 .cds.lib files in cadence/cds_libs/ directory
+Info: Generating the following file(s) for RIVIERA simulator in /home/duesan/Documents/CPU3/CPU1/simulation/ directory:
+Info: 	aldec/rivierapro_setup.tcl
+Info: For information on how to simulate your IP, see the explanatory comments in the simulator-specific subdirectories under /home/duesan/Documents/CPU3/CPU1/simulation/.
+Info: Regenerate these scripts whenever you make any change to any Quartus-generated IP in your project.
+Info: Finished: Create Modelsim Project.
+Info: Starting: Create block symbol file (.bsf)
+Info: qsys-generate /home/duesan/Documents/CPU3/CPU1.qsys --block-symbol-file --output-directory=/home/duesan/Documents/CPU3/CPU1 --family="Cyclone V" --part=5CSXFC6D6F31C6
+Progress: Loading CPU3/CPU1.qsys
+Progress: Reading input file
+Progress: Adding CPU1 [altera_nios2_gen2 18.1]
+Progress: Parameterizing module CPU1
+Progress: Adding buzzer [altera_avalon_pio 18.1]
+Progress: Parameterizing module buzzer
+Progress: Adding clk_0 [clock_source 18.1]
+Progress: Parameterizing module clk_0
+Progress: Adding jtag_uart_0 [altera_avalon_jtag_uart 18.1]
+Progress: Parameterizing module jtag_uart_0
+Progress: Adding key_1 [altera_avalon_pio 18.1]
+Progress: Parameterizing module key_1
+Progress: Adding key_2 [altera_avalon_pio 18.1]
+Progress: Parameterizing module key_2
+Progress: Adding key_3 [altera_avalon_pio 18.1]
+Progress: Parameterizing module key_3
+Progress: Adding leds [altera_avalon_pio 18.1]
+Progress: Parameterizing module leds
+Progress: Adding ram_0 [altera_avalon_onchip_memory2 18.1]
+Progress: Parameterizing module ram_0
+Progress: Adding seven_seg_0 [altera_avalon_pio 18.1]
+Progress: Parameterizing module seven_seg_0
+Progress: Adding seven_seg_1 [altera_avalon_pio 18.1]
+Progress: Parameterizing module seven_seg_1
+Progress: Adding seven_seg_2 [altera_avalon_pio 18.1]
+Progress: Parameterizing module seven_seg_2
+Progress: Adding seven_seg_3 [altera_avalon_pio 18.1]
+Progress: Parameterizing module seven_seg_3
+Progress: Adding seven_seg_4 [altera_avalon_pio 18.1]
+Progress: Parameterizing module seven_seg_4
+Progress: Adding seven_seg_5 [altera_avalon_pio 18.1]
+Progress: Parameterizing module seven_seg_5
+Progress: Adding sw_rst [altera_avalon_pio 18.1]
+Progress: Parameterizing module sw_rst
+Progress: Adding timer_0 [altera_avalon_timer 18.1]
+Progress: Parameterizing module timer_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: CPU1.jtag_uart_0: JTAG UART IP input clock need to be at least double (2x) the operating frequency of JTAG TCK on board
+Info: CPU1.key_1: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: CPU1.key_2: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: CPU1.key_3: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: CPU1.sw_rst: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: qsys-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: qsys-generate /home/duesan/Documents/CPU3/CPU1.qsys --synthesis=VERILOG --output-directory=/home/duesan/Documents/CPU3/CPU1/synthesis --family="Cyclone V" --part=5CSXFC6D6F31C6
+Progress: Loading CPU3/CPU1.qsys
+Progress: Reading input file
+Progress: Adding CPU1 [altera_nios2_gen2 18.1]
+Progress: Parameterizing module CPU1
+Progress: Adding buzzer [altera_avalon_pio 18.1]
+Progress: Parameterizing module buzzer
+Progress: Adding clk_0 [clock_source 18.1]
+Progress: Parameterizing module clk_0
+Progress: Adding jtag_uart_0 [altera_avalon_jtag_uart 18.1]
+Progress: Parameterizing module jtag_uart_0
+Progress: Adding key_1 [altera_avalon_pio 18.1]
+Progress: Parameterizing module key_1
+Progress: Adding key_2 [altera_avalon_pio 18.1]
+Progress: Parameterizing module key_2
+Progress: Adding key_3 [altera_avalon_pio 18.1]
+Progress: Parameterizing module key_3
+Progress: Adding leds [altera_avalon_pio 18.1]
+Progress: Parameterizing module leds
+Progress: Adding ram_0 [altera_avalon_onchip_memory2 18.1]
+Progress: Parameterizing module ram_0
+Progress: Adding seven_seg_0 [altera_avalon_pio 18.1]
+Progress: Parameterizing module seven_seg_0
+Progress: Adding seven_seg_1 [altera_avalon_pio 18.1]
+Progress: Parameterizing module seven_seg_1
+Progress: Adding seven_seg_2 [altera_avalon_pio 18.1]
+Progress: Parameterizing module seven_seg_2
+Progress: Adding seven_seg_3 [altera_avalon_pio 18.1]
+Progress: Parameterizing module seven_seg_3
+Progress: Adding seven_seg_4 [altera_avalon_pio 18.1]
+Progress: Parameterizing module seven_seg_4
+Progress: Adding seven_seg_5 [altera_avalon_pio 18.1]
+Progress: Parameterizing module seven_seg_5
+Progress: Adding sw_rst [altera_avalon_pio 18.1]
+Progress: Parameterizing module sw_rst
+Progress: Adding timer_0 [altera_avalon_timer 18.1]
+Progress: Parameterizing module timer_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: CPU1.jtag_uart_0: JTAG UART IP input clock need to be at least double (2x) the operating frequency of JTAG TCK on board
+Info: CPU1.key_1: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: CPU1.key_2: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: CPU1.key_3: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: CPU1.sw_rst: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: CPU1: Generating CPU1 "CPU1" for QUARTUS_SYNTH
+Info: CPU1: "CPU1" instantiated altera_nios2_gen2 "CPU1"
+Info: buzzer: Starting RTL generation for module 'CPU1_buzzer'
+Info: buzzer:   Generation command is [exec /home/duesan/intelFPGA_lite/18.1/quartus/linux64/perl/bin/perl -I /home/duesan/intelFPGA_lite/18.1/quartus/linux64/perl/lib -I /home/duesan/intelFPGA_lite/18.1/quartus/sopc_builder/bin/europa -I /home/duesan/intelFPGA_lite/18.1/quartus/sopc_builder/bin/perl_lib -I /home/duesan/intelFPGA_lite/18.1/quartus/sopc_builder/bin -I /home/duesan/intelFPGA_lite/18.1/quartus/../ip/altera/sopc_builder_ip/common -I /home/duesan/intelFPGA_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- /home/duesan/intelFPGA_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=CPU1_buzzer --dir=/tmp/alt9954_8707478999221561869.dir/0104_buzzer_gen/ --quartus_dir=/home/duesan/intelFPGA_lite/18.1/quartus --verilog --config=/tmp/alt9954_8707478999221561869.dir/0104_buzzer_gen//CPU1_buzzer_component_configuration.pl  --do_build_sim=0  ]
+Info: buzzer: Done RTL generation for module 'CPU1_buzzer'
+Info: buzzer: "CPU1" instantiated altera_avalon_pio "buzzer"
+Info: jtag_uart_0: Starting RTL generation for module 'CPU1_jtag_uart_0'
+Info: jtag_uart_0:   Generation command is [exec /home/duesan/intelFPGA_lite/18.1/quartus/linux64/perl/bin/perl -I /home/duesan/intelFPGA_lite/18.1/quartus/linux64/perl/lib -I /home/duesan/intelFPGA_lite/18.1/quartus/sopc_builder/bin/europa -I /home/duesan/intelFPGA_lite/18.1/quartus/sopc_builder/bin/perl_lib -I /home/duesan/intelFPGA_lite/18.1/quartus/sopc_builder/bin -I /home/duesan/intelFPGA_lite/18.1/quartus/../ip/altera/sopc_builder_ip/common -I /home/duesan/intelFPGA_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart -- /home/duesan/intelFPGA_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart/generate_rtl.pl --name=CPU1_jtag_uart_0 --dir=/tmp/alt9954_8707478999221561869.dir/0105_jtag_uart_0_gen/ --quartus_dir=/home/duesan/intelFPGA_lite/18.1/quartus --verilog --config=/tmp/alt9954_8707478999221561869.dir/0105_jtag_uart_0_gen//CPU1_jtag_uart_0_component_configuration.pl  --do_build_sim=0  ]
+Info: jtag_uart_0: Done RTL generation for module 'CPU1_jtag_uart_0'
+Info: jtag_uart_0: "CPU1" instantiated altera_avalon_jtag_uart "jtag_uart_0"
+Info: key_1: Starting RTL generation for module 'CPU1_key_1'
+Info: key_1:   Generation command is [exec /home/duesan/intelFPGA_lite/18.1/quartus/linux64/perl/bin/perl -I /home/duesan/intelFPGA_lite/18.1/quartus/linux64/perl/lib -I /home/duesan/intelFPGA_lite/18.1/quartus/sopc_builder/bin/europa -I /home/duesan/intelFPGA_lite/18.1/quartus/sopc_builder/bin/perl_lib -I /home/duesan/intelFPGA_lite/18.1/quartus/sopc_builder/bin -I /home/duesan/intelFPGA_lite/18.1/quartus/../ip/altera/sopc_builder_ip/common -I /home/duesan/intelFPGA_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- /home/duesan/intelFPGA_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=CPU1_key_1 --dir=/tmp/alt9954_8707478999221561869.dir/0106_key_1_gen/ --quartus_dir=/home/duesan/intelFPGA_lite/18.1/quartus --verilog --config=/tmp/alt9954_8707478999221561869.dir/0106_key_1_gen//CPU1_key_1_component_configuration.pl  --do_build_sim=0  ]
+Info: key_1: Done RTL generation for module 'CPU1_key_1'
+Info: key_1: "CPU1" instantiated altera_avalon_pio "key_1"
+Info: leds: Starting RTL generation for module 'CPU1_leds'
+Info: leds:   Generation command is [exec /home/duesan/intelFPGA_lite/18.1/quartus/linux64/perl/bin/perl -I /home/duesan/intelFPGA_lite/18.1/quartus/linux64/perl/lib -I /home/duesan/intelFPGA_lite/18.1/quartus/sopc_builder/bin/europa -I /home/duesan/intelFPGA_lite/18.1/quartus/sopc_builder/bin/perl_lib -I /home/duesan/intelFPGA_lite/18.1/quartus/sopc_builder/bin -I /home/duesan/intelFPGA_lite/18.1/quartus/../ip/altera/sopc_builder_ip/common -I /home/duesan/intelFPGA_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- /home/duesan/intelFPGA_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=CPU1_leds --dir=/tmp/alt9954_8707478999221561869.dir/0107_leds_gen/ --quartus_dir=/home/duesan/intelFPGA_lite/18.1/quartus --verilog --config=/tmp/alt9954_8707478999221561869.dir/0107_leds_gen//CPU1_leds_component_configuration.pl  --do_build_sim=0  ]
+Info: leds: Done RTL generation for module 'CPU1_leds'
+Info: leds: "CPU1" instantiated altera_avalon_pio "leds"
+Info: ram_0: Starting RTL generation for module 'CPU1_ram_0'
+Info: ram_0:   Generation command is [exec /home/duesan/intelFPGA_lite/18.1/quartus/linux64/perl/bin/perl -I /home/duesan/intelFPGA_lite/18.1/quartus/linux64/perl/lib -I /home/duesan/intelFPGA_lite/18.1/quartus/sopc_builder/bin/europa -I /home/duesan/intelFPGA_lite/18.1/quartus/sopc_builder/bin/perl_lib -I /home/duesan/intelFPGA_lite/18.1/quartus/sopc_builder/bin -I /home/duesan/intelFPGA_lite/18.1/quartus/../ip/altera/sopc_builder_ip/common -I /home/duesan/intelFPGA_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- /home/duesan/intelFPGA_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=CPU1_ram_0 --dir=/tmp/alt9954_8707478999221561869.dir/0108_ram_0_gen/ --quartus_dir=/home/duesan/intelFPGA_lite/18.1/quartus --verilog --config=/tmp/alt9954_8707478999221561869.dir/0108_ram_0_gen//CPU1_ram_0_component_configuration.pl  --do_build_sim=0  ]
+Info: ram_0: Done RTL generation for module 'CPU1_ram_0'
+Info: ram_0: "CPU1" instantiated altera_avalon_onchip_memory2 "ram_0"
+Info: seven_seg_0: Starting RTL generation for module 'CPU1_seven_seg_0'
+Info: seven_seg_0:   Generation command is [exec /home/duesan/intelFPGA_lite/18.1/quartus/linux64/perl/bin/perl -I /home/duesan/intelFPGA_lite/18.1/quartus/linux64/perl/lib -I /home/duesan/intelFPGA_lite/18.1/quartus/sopc_builder/bin/europa -I /home/duesan/intelFPGA_lite/18.1/quartus/sopc_builder/bin/perl_lib -I /home/duesan/intelFPGA_lite/18.1/quartus/sopc_builder/bin -I /home/duesan/intelFPGA_lite/18.1/quartus/../ip/altera/sopc_builder_ip/common -I /home/duesan/intelFPGA_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- /home/duesan/intelFPGA_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=CPU1_seven_seg_0 --dir=/tmp/alt9954_8707478999221561869.dir/0109_seven_seg_0_gen/ --quartus_dir=/home/duesan/intelFPGA_lite/18.1/quartus --verilog --config=/tmp/alt9954_8707478999221561869.dir/0109_seven_seg_0_gen//CPU1_seven_seg_0_component_configuration.pl  --do_build_sim=0  ]
+Info: seven_seg_0: Done RTL generation for module 'CPU1_seven_seg_0'
+Info: seven_seg_0: "CPU1" instantiated altera_avalon_pio "seven_seg_0"
+Info: sw_rst: Starting RTL generation for module 'CPU1_sw_rst'
+Info: sw_rst:   Generation command is [exec /home/duesan/intelFPGA_lite/18.1/quartus/linux64/perl/bin/perl -I /home/duesan/intelFPGA_lite/18.1/quartus/linux64/perl/lib -I /home/duesan/intelFPGA_lite/18.1/quartus/sopc_builder/bin/europa -I /home/duesan/intelFPGA_lite/18.1/quartus/sopc_builder/bin/perl_lib -I /home/duesan/intelFPGA_lite/18.1/quartus/sopc_builder/bin -I /home/duesan/intelFPGA_lite/18.1/quartus/../ip/altera/sopc_builder_ip/common -I /home/duesan/intelFPGA_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- /home/duesan/intelFPGA_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=CPU1_sw_rst --dir=/tmp/alt9954_8707478999221561869.dir/0110_sw_rst_gen/ --quartus_dir=/home/duesan/intelFPGA_lite/18.1/quartus --verilog --config=/tmp/alt9954_8707478999221561869.dir/0110_sw_rst_gen//CPU1_sw_rst_component_configuration.pl  --do_build_sim=0  ]
+Info: sw_rst: Done RTL generation for module 'CPU1_sw_rst'
+Info: sw_rst: "CPU1" instantiated altera_avalon_pio "sw_rst"
+Info: timer_0: Starting RTL generation for module 'CPU1_timer_0'
+Info: timer_0:   Generation command is [exec /home/duesan/intelFPGA_lite/18.1/quartus/linux64//perl/bin/perl -I /home/duesan/intelFPGA_lite/18.1/quartus/linux64//perl/lib -I /home/duesan/intelFPGA_lite/18.1/quartus/sopc_builder/bin/europa -I /home/duesan/intelFPGA_lite/18.1/quartus/sopc_builder/bin/perl_lib -I /home/duesan/intelFPGA_lite/18.1/quartus/sopc_builder/bin -I /home/duesan/intelFPGA_lite/18.1/quartus/../ip/altera/sopc_builder_ip/common -I /home/duesan/intelFPGA_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_timer -- /home/duesan/intelFPGA_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_timer/generate_rtl.pl --name=CPU1_timer_0 --dir=/tmp/alt9954_8707478999221561869.dir/0111_timer_0_gen/ --quartus_dir=/home/duesan/intelFPGA_lite/18.1/quartus --verilog --config=/tmp/alt9954_8707478999221561869.dir/0111_timer_0_gen//CPU1_timer_0_component_configuration.pl  --do_build_sim=0  ]
+Info: timer_0: Done RTL generation for module 'CPU1_timer_0'
+Info: timer_0: "CPU1" instantiated altera_avalon_timer "timer_0"
+Info: avalon_st_adapter: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_001: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_002: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_003: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_004: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_005: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_006: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_007: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_008: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_009: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_010: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_011: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_012: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_013: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_014: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_015: Inserting error_adapter: error_adapter_0
+Info: mm_interconnect_0: "CPU1" instantiated altera_mm_interconnect "mm_interconnect_0"
+Info: irq_mapper: "CPU1" instantiated altera_irq_mapper "irq_mapper"
+Info: rst_controller: "CPU1" instantiated altera_reset_controller "rst_controller"
+Info: cpu: Starting RTL generation for module 'CPU1_CPU1_cpu'
+Info: cpu:   Generation command is [exec /home/duesan/intelFPGA_lite/18.1/quartus/linux64//eperlcmd -I /home/duesan/intelFPGA_lite/18.1/quartus/linux64//perl/lib -I /home/duesan/intelFPGA_lite/18.1/quartus/sopc_builder/bin/europa -I /home/duesan/intelFPGA_lite/18.1/quartus/sopc_builder/bin/perl_lib -I /home/duesan/intelFPGA_lite/18.1/quartus/sopc_builder/bin -I /home/duesan/intelFPGA_lite/18.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/cpu_lib -I /home/duesan/intelFPGA_lite/18.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/nios_lib -I /home/duesan/intelFPGA_lite/18.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -I /home/duesan/intelFPGA_lite/18.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -- /home/duesan/intelFPGA_lite/18.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/generate_rtl.epl --name=CPU1_CPU1_cpu --dir=/tmp/alt9954_8707478999221561869.dir/0114_cpu_gen/ --quartus_bindir=/home/duesan/intelFPGA_lite/18.1/quartus/linux64/ --verilog --config=/tmp/alt9954_8707478999221561869.dir/0114_cpu_gen//CPU1_CPU1_cpu_processor_configuration.pl  --do_build_sim=0  ]
+Info: cpu: # 2024.08.19 13:01:57 (*) Starting Nios II generation
+Info: cpu: # 2024.08.19 13:01:57 (*)   Checking for plaintext license.
+Info: cpu: # 2024.08.19 13:03:33 (*)   Plaintext license not found.
+Info: cpu: # 2024.08.19 13:03:33 (*)   No license required to generate encrypted Nios II/e.
+Info: cpu: # 2024.08.19 13:03:33 (*)   Elaborating CPU configuration settings
+Info: cpu: # 2024.08.19 13:03:33 (*)   Creating all objects for CPU
+Info: cpu: # 2024.08.19 13:03:33 (*)   Generating RTL from CPU objects
+Info: cpu: # 2024.08.19 13:03:33 (*)   Creating plain-text RTL
+Info: cpu: # 2024.08.19 13:03:33 (*) Done Nios II generation
+Info: cpu: Done RTL generation for module 'CPU1_CPU1_cpu'
+Info: cpu: "CPU1" instantiated altera_nios2_gen2_unit "cpu"
+Info: CPU1_data_master_translator: "mm_interconnect_0" instantiated altera_merlin_master_translator "CPU1_data_master_translator"
+Info: jtag_uart_0_avalon_jtag_slave_translator: "mm_interconnect_0" instantiated altera_merlin_slave_translator "jtag_uart_0_avalon_jtag_slave_translator"
+Info: CPU1_data_master_agent: "mm_interconnect_0" instantiated altera_merlin_master_agent "CPU1_data_master_agent"
+Info: jtag_uart_0_avalon_jtag_slave_agent: "mm_interconnect_0" instantiated altera_merlin_slave_agent "jtag_uart_0_avalon_jtag_slave_agent"
+Info: jtag_uart_0_avalon_jtag_slave_agent_rsp_fifo: "mm_interconnect_0" instantiated altera_avalon_sc_fifo "jtag_uart_0_avalon_jtag_slave_agent_rsp_fifo"
+Info: router: "mm_interconnect_0" instantiated altera_merlin_router "router"
+Info: router_001: "mm_interconnect_0" instantiated altera_merlin_router "router_001"
+Info: router_002: "mm_interconnect_0" instantiated altera_merlin_router "router_002"
+Info: router_004: "mm_interconnect_0" instantiated altera_merlin_router "router_004"
+Info: cmd_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux"
+Info: cmd_demux_001: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux_001"
+Info: cmd_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux"
+Info: cmd_mux_002: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux_002"
+Info: Reusing file /home/duesan/Documents/CPU3/CPU1/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: rsp_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_demux"
+Info: rsp_demux_002: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_demux_002"
+Info: rsp_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux"
+Info: Reusing file /home/duesan/Documents/CPU3/CPU1/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: rsp_mux_001: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux_001"
+Info: Reusing file /home/duesan/Documents/CPU3/CPU1/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: avalon_st_adapter: "mm_interconnect_0" instantiated altera_avalon_st_adapter "avalon_st_adapter"
+Info: error_adapter_0: "avalon_st_adapter" instantiated error_adapter "error_adapter_0"
+Info: CPU1: Done "CPU1" with 33 modules, 46 files
+Info: qsys-generate succeeded.
+Info: Finished: Create HDL design files for synthesis
